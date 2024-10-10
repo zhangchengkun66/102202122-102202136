@@ -1,0 +1,19 @@
+<view class="info-edit-container">
+  <view class="input-group">
+    <input placeholder="姓名" bindinput="onNameInput" />
+  </view>
+  <view class="input-group">
+    <input placeholder="学院" bindinput="onCollegeInput" />
+  </view>
+  <view class="input-group">
+    <input placeholder="专业" bindinput="onMajorInput" />
+  </view>
+  <view class="input-group">
+    <textarea placeholder="性格" bindinput="onCharacterInput" />
+  </view>
+  <view class="input-group">
+    <textarea placeholder="擅长的工作" bindinput="onStrengthInput" />
+  </view>
+  <button bindtap="saveInfo">保存</button>
+  <text class="save-message" wx:if="{{showSaveMessage}}">{{saveMessage}}</text>
+</view>

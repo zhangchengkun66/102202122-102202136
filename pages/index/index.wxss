@@ -1,0 +1,69 @@
+.swiper-container {
+  height: 250px; /* 适当降低swiper高度 */
+}
+
+.item {
+  width: 100%;
+  line-height: 250px; /* 与swiper高度一致 */
+  text-align: center;
+}
+
+swiper-item:nth-child(1).item {
+  background-color: lightskyblue;
+}
+
+swiper-item:nth-child(2).item {
+  background-color: lightseagreen;
+}
+
+swiper-item:nth-child(3).item {
+  background-color: lightslategray;
+}
+
+.swiper-container {
+  height: 250px;
+}
+
+.item {
+  width: 100%;
+  line-height: 250px;
+  text-align: center;
+}
+
+swiper-item:nth-child(1).item {
+  background-color: lightskyblue;
+}
+
+swiper-item:nth-child(2).item {
+  background-color: lightseagreen;
+}
+
+swiper-item:nth-child(3).item {
+  background-color: lightslategray;
+}
+
+.project-details {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.project-description {
+  color: #666;
+}
+
+.learn-more-button {
+  padding: 7px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+page {
+  background-image: url('https://zck666-1330236394.cos.ap-chengdu.myqcloud.com/66666大.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

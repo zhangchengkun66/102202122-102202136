@@ -1,0 +1,36 @@
+.chat-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.chat-messages {
+  flex: 1;
+}
+.sent-message {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+}
+.received-message {
+  align-self: flex-start;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  top: 200px
+}
+.input-container {
+  display: flex;
+  padding: 10px;
+  position: relative;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+input {
+  flex: 1;
+  margin-right: 10px;
+  position: relative;
+}

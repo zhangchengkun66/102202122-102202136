@@ -1,0 +1,4 @@
+<view class="signature-container">
+  <textarea placeholder="输入你的个性签名..." bindinput="onSignatureChange" />
+  <button bindtap="saveSignature">保存</button>
+</view>

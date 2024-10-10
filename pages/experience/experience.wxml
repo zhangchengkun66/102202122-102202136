@@ -1,0 +1,12 @@
+<view class="project-experience-container">
+  <view class="input-group">
+    <input placeholder="项目名称" bindinput="onProjectNameInput" />
+  </view>
+  <view class="input-group">
+    <input placeholder="项目中的分工" bindinput="onRoleInput" />
+  </view>
+  <view class="input-group">
+    <textarea placeholder="项目实践收获" bindinput="onGainInput" />
+  </view>
+  <button bindtap="saveProjectExperience">保存</button>
+</view>

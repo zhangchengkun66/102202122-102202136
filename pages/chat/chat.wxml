@@ -1,0 +1,14 @@
+<view class="chat-container">
+  <scroll-view scroll-y="true" class="chat-messages">
+    <!-- 聊天消息列表 -->
+    <block wx:for="{{messages}}" wx:key="index">
+      <view class="message {{item.type === 'sent'? 'sent-message' : 'received-message'}}">
+        <text>{{item.content}}</text>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="input-container">
+    <input type="text" placeholder="输入消息..." bindinput="onInputChange" />
+    <button bindtap="sendMessage">发送</button>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<swiper class="swiper-container" indicator-dots indicator-color="white" indicator-active-color="gray" autoplay="" autoplay>
+  <swiper-item>
+    <image class="item" src="/images/441.png"></image>
+  </swiper-item>
+  <swiper-item>
+    <image class="item" src="/images/442.png"></image>
+  </swiper-item>
+  <swiper-item>
+    <image class="item" src="/images/443.png"></image>
+  </swiper-item>
+</swiper>
+<view class="container">
+  <view class="forum-list">
+    <view class="forum-item" wx:for="{{forums}}" wx:key="index">
+      <text class="forum-title">{{item.title}}</text>
+      <text class="forum-content">{{item.content}}</text>
+      <button bindtap="goToForum" data-id="{{item.id}}">查看详情</button>
+    </view>
+  </view>
+  
+
+  <view class="comment-section">
+    <textarea placeholder="发表你的评论..." value="{{comment}}" auto-focus />
+    <button bindtap="submitComment">发表</button>
+  </view>
+</view>
+   
+    

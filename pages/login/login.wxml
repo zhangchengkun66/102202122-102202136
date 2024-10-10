@@ -1,0 +1,10 @@
+<view class="login-container">
+  <image class="logo" src="/images/771.png"></image>
+  <view class="input-group">
+    <input class="username-input" placeholder="学号/手机号" bindinput="onUsernameInput"></input>
+    <input class="password-input" placeholder="密码" password type="password" bindinput="onPasswordInput"></input>
+  </view>
+  <button class="login-button" bind:tap="login">登录</button>
+  <button class="forgot-password">忘记密码？</button>
+  <button class="register-link">注册新账号</button>
+</view>

@@ -1,0 +1,7 @@
+<view class="reason-edit-container">
+  <input placeholder="姓名" bindinput="onNameInput" />
+  <input placeholder="学院专业" bindinput="onCollegeInput" />
+  <input placeholder="可自由支配时间" bindinput="onMajorInput" />
+  <textarea placeholder="申请理由" bindinput="onTimeInput" />
+  <button bindtap="saveReason">保存</button>
+</view>

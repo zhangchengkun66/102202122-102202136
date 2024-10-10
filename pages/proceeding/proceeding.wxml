@@ -1,0 +1,15 @@
+<view class="project-edit-container">
+  <view class="input-group">
+    <input placeholder="项目分工" bindinput="onRoleInput" />
+  </view>
+  <view class="input-group">
+    <input placeholder="项目目标" bindinput="onGoalInput" />
+  </view>
+  <view class="input-group">
+    <input placeholder="截至日期" bindinput="onDeadlineInput" />
+  </view>
+  <view class="input-group">
+    <input placeholder="完成进度" bindinput="onProgressInput" />
+  </view>
+  <button bindtap="saveProject">保存</button>
+</view>

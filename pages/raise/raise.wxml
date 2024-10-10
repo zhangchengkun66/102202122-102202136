@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="form-item">
+    <text>项目名称:</text>
+    <input placeholder="请输入项目名称" bindinput="onNameInput" />
+  </view>
+
+  <view class="form-item">
+    <text>项目日期:</text>
+    <input placeholder="请选择项目日期" type="date" bindchange="onDateChange" />
+  </view>
+
+  <view class="form-item">
+    <text>人数要求:</text>
+    <input placeholder="请输入人数要求" type="number" bindinput="onPeopleInput" />
+  </view>
+  <view class="form-item">
+    <text>项目目标:</text>
+    <input placeholder="项目目标" type="number" bindinput="onTargetInput" />
+  </view>
+  <button class="submit-btn" bindtap="submitProject">发起项目</button>
+</view>

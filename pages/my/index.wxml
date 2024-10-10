@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="info_list">
+  <button class="weui_cell" data-index="0" bind:tap="navigateToPage1">
+    <view class="weui_cell_hd"><image src="../../images/iconfont-dingdan.png"></image></view>
+    <view class="weui_cell_bd">
+      <view class="weui_cell_bd_p">个性签名</view>
+    </view>
+    <view class="with_arrow"></view>
+  </button>
+  <button class="weui_cell" data-index="1" bind:tap="navigateToPage2">
+    <view class="weui_cell_hd"><image src="../../images/iconfont-card.png"></image></view>
+    <view class="weui_cell_bd">
+      <view class="weui_cell_bd_p">项目经历</view>
+    </view>
+    <view wx:if="{{userListInfo[1].isunread}}" class="badge">{{userListInfo[1].unreadNum}}</view>
+    <view class="with_arrow"></view>
+  </button>
+  <button class="weui_cell"  data-index="2" bind:tap="navigateToPage3">
+    <view class="weui_cell_hd"><image src="../../images/iconfont-icontuan.png"></image></view>
+    <view class="weui_cell_bd">
+      <view class="weui_cell_bd_p">正在参加的</view>
+    </view>
+    <view wx:if="{{userListInfo[2].isunread}}" class="badge">{{userListInfo[2].unreadNum}}</view>
+    <view class="with_arrow"></view>
+  </button>
+  <button class="weui_cell"  data-index="3" bind:tap="navigateToPage4">
+    <view class="weui_cell_hd"><image src="../../images/iconfont-shouhuodizhi.png"></image></view>
+    <view class="weui_cell_bd">
+      <view class="weui_cell_bd_p">基本信息</view>
+    </view>
+    <view class="with_arrow"></view>
+  </button>
+  <button class="weui_cell"  data-index="4" bind:tap="navigateToPage5">
+    <view class="weui_cell_hd"><image src="../../images/iconfont-kefu.png"></image></view>
+    <view class="weui_cell_bd">
+      <view class="weui_cell_bd_p">发起项目</view>
+    </view>
+    <view class="with_arrow"></view>
+  </button>
+  <button class="weui_cell"  data-index="5" bind:tap="navigateToPage6">
+    <view class="weui_cell_hd"><image src="../../images/iconfont-help.png"></image></view>
+    <view class="weui_cell_bd">
+      <view class="weui_cell_bd_p">账号管理</view>
+    </view>
+    <view class="with_arrow"></view>
+  </button>
+</view>
+
+</view>
+

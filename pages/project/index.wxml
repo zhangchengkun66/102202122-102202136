@@ -1,0 +1,19 @@
+<view class="search-container">
+  <input class="search-input" placeholder="搜索项目" bindinput="onInputChange" />
+  <button class="search-button">搜索</button>
+</view>
+<view class="hot-projects-container">
+  <button class="hot-project" bind:tap="onInputChange1" >
+   <image class="project-image" src="/images/111.png"></image>
+   <text class="project-title">热门项目 1</text>
+  </button>
+  <button class="hot-project" bind:tap="onInputChange1">
+   <image class="project-image" src="/images/112.png"></image>
+   <text class="project-title">热门项目 2</text>
+  </button>
+  <button class="hot-project" bind:tap="onInputChange1">
+   <image class="project-image" src="/images/113.png"></image>
+   <text class="project-title">热门项目 3</text>
+  </button>
+</view>
+ 
