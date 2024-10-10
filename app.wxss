@@ -1,0 +1,16 @@
+/**app.wxss**/
+
+
+.container {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+page {
+  background-image: url('https://zck666-1330236394.cos.ap-chengdu.myqcloud.com/小程序搜索栏 (3).jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
